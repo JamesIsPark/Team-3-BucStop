@@ -1,10 +1,9 @@
 # BucStop
-### A Team [Redacted] Project
+### Team Index Three
 ### Members:
-> Josh Rucevice, Bryson Brandon, Kurt Brewer, Patrick Vergason
-> Ethan Hensley, Charlie Shahan, Ethan Webb
+> James Park, Andrew Garcia, Trent Allen, Jacob Perdue, Blake Lawson
 #### CSCI 4350
-#### Spring 2024, East Tennessee State University
+#### Fall 2024, East Tennessee State University
 
 ### Overview:
 This project is a game website made by and for ETSU students. It
