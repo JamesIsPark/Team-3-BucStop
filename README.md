@@ -15,7 +15,7 @@ This project also communicates to a microservice with HTTP calls for the game in
 * [Backlog Spring 2024](https://docs.google.com/document/d/100WxhA-8cx5tWQfZs9JMoHvPGJO37cdkfATp0Td0uos/edit?usp=sharing)
 * [Backlog Fall 2024](https://docs.google.com/document/d/1bRwSF4ruVywq7foFDtmQnjqAAKeYdk9yt1MvzyBBvL4/edit)
 ### Project Plan:
-[Project Plan Doc link](https://docs.google.com/document/d/1lopwnWAl-WA3CEhNJGGfSxrIz2FvDrpibQSW70T8A-o/edit)
+[Project Plan Doc](https://docs.google.com/document/d/12AH-SSa8jOCtNAGOVi41bWx9s0rQrPvtmCRUlanSDiY/edit?usp=sharing)
 
 ### Project Structure: 
 To understand the project structure, familiarize yourself with the
