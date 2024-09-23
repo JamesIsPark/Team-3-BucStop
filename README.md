@@ -17,6 +17,8 @@ This project also communicates to a microservice with HTTP calls for the game in
 ### Project Plan:
 [Project Plan Doc](https://docs.google.com/document/d/12AH-SSa8jOCtNAGOVi41bWx9s0rQrPvtmCRUlanSDiY/edit?usp=sharing)
 
+[Microservices](https://docs.google.com/document/d/1614BGhXJ8EkGg9p286xH0KazdWtSf83aGFW192Is-DI/edit)
+
 ### Project Structure: 
 To understand the project structure, familiarize yourself with the
 MVC (Model View Controller) structure. When clicking on a game, 
