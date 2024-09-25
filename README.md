@@ -1,5 +1,5 @@
 # BucStop
-### Team Index Three
+### Team Index Three Test
 ### Members:
 > James Park, Andrew Garcia, Trent Allen, Jacob Perdue, Blake Lawson
 #### CSCI 4350
