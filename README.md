@@ -48,10 +48,10 @@ BucStop folder.
 			including images, the javascript games, the icons, etc.
 ### Associated Repositories
 * [Microservice Repo](https://github.com/Redacted-Team/4350_002_Fall23_MicroService)
-* [API Gateway](https://github.com/Redacted-Team/4350_002_Fall23_APIGateway)
-* [Tetris Microservice](https://github.com/Redacted-Team/4350_002_Fall23_Tetris)
-* [Snake Microservice](https://github.com/Redacted-Team/4350_002_Fall23_Snake)
-* [Pong Microservice](https://github.com/Redacted-Team/4350_002_Fall23_Pong)
+* [API Gateway](https://github.com/JamesIsPark/Team-3-BucStop_APIGateway)
+* [Tetris Microservice](https://github.com/JamesIsPark/Team-3-BucStop_Tetris)
+* [Snake Microservice](https://github.com/JamesIsPark/Team-3-BucStop_Snake)
+* [Pong Microservice](https://github.com/JamesIsPark/Team-3-BucStop_Pong)
 
 ### Help
 For more documentation on how to run locally and how to set up deployments, see the google docs below:
