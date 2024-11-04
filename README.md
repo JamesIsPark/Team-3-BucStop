@@ -47,11 +47,11 @@ BucStop folder.
 		* This folder contains the resources used by the project, 
 			including images, the javascript games, the icons, etc.
 ### Associated Repositories
-* [Microservice Repo](https://github.com/Redacted-Team/4350_002_Fall23_MicroService)
-* [API Gateway](https://github.com/JamesIsPark/Team-3-BucStop_APIGateway)
-* [Tetris Microservice](https://github.com/JamesIsPark/Team-3-BucStop_Tetris)
-* [Snake Microservice](https://github.com/JamesIsPark/Team-3-BucStop_Snake)
-* [Pong Microservice](https://github.com/JamesIsPark/Team-3-BucStop_Pong)
+* BucStop [(Docker)](https://hub.docker.com/repository/docker/jamesispark/bucstop/general)
+* API Gateway [(Github)](https://github.com/JamesIsPark/Team-3-BucStop_APIGateway) [(Docker)](https://hub.docker.com/repository/docker/jamesispark/bucstop_apigateway/general)
+* Tetris Microservice [(Github)](https://github.com/JamesIsPark/Team-3-BucStop_Tetris) [(Docker)](https://hub.docker.com/repository/docker/jamesispark/bucstop_microtetris/general)
+* Snake Microservice [(Github)](https://github.com/JamesIsPark/Team-3-BucStop_Snake) [(Docker)](https://hub.docker.com/repository/docker/jamesispark/bucstop_microsnake/general)
+* Pong Microservice [(Github)](https://github.com/JamesIsPark/Team-3-BucStop_Pong) [(Docker)](https://hub.docker.com/repository/docker/jamesispark/bucstop_micropong/general)
 
 ### Help
 For more documentation on how to run locally and how to set up deployments, see the google docs below:
