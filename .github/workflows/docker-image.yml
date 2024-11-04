@@ -3,10 +3,10 @@ name: Publish Docker image
 on:
   push:
     branches:
-      - 'dev_*'  # This will trigger on any branch matching sprint_x
+      - 'sprint_*'  # This will trigger on any branch matching sprint_x
   pull_request:
     branches:
-      - 'dev_*'  # This will also trigger for pull requests targeting sprint_x branches
+      - 'sprint_*'  # This will also trigger for pull requests targeting sprint_x branches
 
 jobs:
   push_to_registry:
@@ -27,7 +27,7 @@ jobs:
       - name: Determine latest sprint branch
         id: latest_branch
         run: |
-          latest_branch=$(git branch -r | grep -o 'origin/dev_[0-9]*' | sed 's/origin\///' | sort -V | tail -n 1)
+          latest_branch=$(git branch -r | grep -o 'origin/sprint_[0-9]*' | sed 's/origin\///' | sort -V | tail -n 1)
           if [ -z "$latest_branch" ]; then
             echo "No sprint branches found!"
             exit 1
