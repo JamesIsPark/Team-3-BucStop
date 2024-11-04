@@ -3,7 +3,7 @@ name: Publish Docker image
 on:
   push:
     branches:
-      - 'dev_*'  # This will trigger on any branch matching dev_x
+      - 'sprint_*'  # This will trigger on any branch matching sprint_x
 
 jobs:
   push_to_registry:
@@ -21,10 +21,10 @@ jobs:
       - name: Fetch all branches
         run: git fetch --all
 
-      - name: Determine latest dev branch
+      - name: Determine latest sprint branch
         id: latest_branch
         run: |
-          latest_branch=$(git branch -r | grep -o 'origin/dev_[0-9]*' | sed 's/origin\///' | sort -V | tail -n 1)
+          latest_branch=$(git branch -r | grep -o 'origin/sprint_[0-9]*' | sed 's/origin\///' | sort -V | tail -n 1)
           echo "Latest branch: $latest_branch"
           echo "::set-output name=branch::$latest_branch"
 
