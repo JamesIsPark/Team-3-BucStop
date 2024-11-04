@@ -1,17 +1,9 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# GitHub recommends pinning actions to a commit SHA.
-# To get a newer version, you will need to update the SHA.
-# You can also reference a tag or branch, but the action may change without warning.
-
 name: Publish Docker image
 
 on:
   push:
-    branches: ['dev_5']
+    branches:
+      - 'dev_*'  # This will trigger on any branch matching dev_x
 
 jobs:
   push_to_registry:
@@ -25,6 +17,16 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
+
+      - name: Fetch all branches
+        run: git fetch --all
+
+      - name: Determine latest dev branch
+        id: latest_branch
+        run: |
+          latest_branch=$(git branch -r | grep -o 'origin/dev_[0-9]*' | sed 's/origin\///' | sort -V | tail -n 1)
+          echo "Latest branch: $latest_branch"
+          echo "::set-output name=branch::$latest_branch"
 
       - name: Log in to Docker Hub
         uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
@@ -47,12 +49,3 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
-      - name: Generate artifact attestation
-        if: success()
-        uses: actions/attest-build-provenance@v1
-        with:
-          subject-name: ${{ env.IMAGE_NAME }}
-          subject-digest: ${{ steps.push.outputs.digest }}
-          push-to-registry: true
-
