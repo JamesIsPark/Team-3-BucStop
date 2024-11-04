@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - 'sprint_*'  # This will trigger on any branch matching sprint_x
+  pull_request:
+    branches:
+      - 'sprint_*'  # This will also trigger for pull requests targeting sprint_x branches
 
 jobs:
   push_to_registry:
@@ -25,8 +28,12 @@ jobs:
         id: latest_branch
         run: |
           latest_branch=$(git branch -r | grep -o 'origin/sprint_[0-9]*' | sed 's/origin\///' | sort -V | tail -n 1)
+          if [ -z "$latest_branch" ]; then
+            echo "No sprint branches found!"
+            exit 1
+          fi
           echo "Latest branch: $latest_branch"
-          echo "::set-output name=branch::$latest_branch"
+          echo "branch=$latest_branch" >> $GITHUB_ENV
 
       - name: Log in to Docker Hub
         uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
