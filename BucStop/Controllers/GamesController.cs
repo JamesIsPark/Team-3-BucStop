@@ -73,6 +73,7 @@ namespace BucStop.Controllers
                 GameInfo info = gameInfos.FirstOrDefault(x => x.Title == game.Title);
                 if(info != null)
                 {
+                    game.Content = info.Content;
                     game.Author = info.Author;
                     game.HowTo = info.HowTo;
                     game.DateAdded = info.DateAdded;
