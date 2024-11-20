@@ -41,7 +41,7 @@
                         }
 
                         <!-- Embed the game's Javascript here -->
-                        <script src="@Url.Content(Model.Content)"></script> 
+                        <script>@Html.Raw(Model.Content)</script> 
 
                         <p id="playerScore" style="color:black">Current Score: 0</p>
                     </div>
